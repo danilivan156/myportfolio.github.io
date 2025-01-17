@@ -1,0 +1,85 @@
+.App {
+  position: relative;
+  height: 100%;
+
+  .mobile_nav_bg {
+    @media(max-width: 992px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75px;
+      background-color: #141416;
+    }
+  }
+
+  .contact_globe {
+    position: fixed;
+    bottom: 16%;
+    left: -14%;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    z-index: -1;
+    display: none;
+    transition: opacity .4s ease-in;
+
+    @media(min-width: 768px) {
+      bottom: 10%;
+      
+    }
+
+    @media(min-width: 992px) {
+      top: 0;
+      display: block;
+      bottom: 0;
+      margin: auto;
+      left: -52%;
+      max-height: 400px;
+      max-width: 750px;
+    }
+
+    @media(min-width: 1200px) {
+      max-height: 600px;
+      left: -44%;
+    }
+
+    .globe_wrap {
+      position: relative;
+      transition: all 0.2s ease-in-out;
+
+      div:first-of-type {
+        max-height: 300px;
+        @media(min-width: 575px) {
+          max-height: 400px;
+        }
+        @media(min-width: 1200px) {
+          max-height: 600px;
+        }
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    canvas {
+      background: transparent;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .sendBack {
+    z-index: -1!important;
+    opacity: 0;
+  }
+
+  .sendFront {
+    z-index: 0!important;
+    opacity: 1;
+  }
+
+}

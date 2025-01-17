@@ -1,0 +1,136 @@
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: left;
+  position: relative;
+
+  @media(min-width: 768px) {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .purple_romb1 {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: -350px;
+    margin: 0 auto;
+    max-width: 200px;
+    opacity: .7;
+    display: none;
+    
+    @media(min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .dots_decor {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -10%;
+    transform: rotate(90deg)
+  }
+
+  .hero_cont {
+    max-width: 500px;
+
+    @media(min-width: 768px) {
+      width: 50%;
+      max-width: 550px;
+      margin: 0;
+    }
+
+    h1 {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 39px;
+      line-height: 28px;
+
+      @media(min-width: 1140px) {
+        font-size: 60px;
+        line-height: 50px;
+      }
+
+      div {
+        display: inline;
+        margin: 15px 0 0;
+
+        @media(min-width: 350px) {
+          margin: 0 15px 15px 0;
+        }
+
+        @media(min-width: 768px) {
+          margin: 0 15px 0 0!important;
+        }
+        
+        span {
+          display: inline-block;
+          transition: all .3s ease-out;
+          
+          &:hover {
+            color: #F4A949;
+            animation: rubberBand;
+            animation-duration: 1s;
+          }
+        }
+      }
+    }
+
+    .hero_blurb {
+      margin: 0;
+      padding: 1.5rem 0;
+      // display: none;
+      @media(min-width: 768px) {
+        display: block;
+        padding: 2rem 0;
+      }
+      @media(min-width: 1200px) {
+        padding-right: 7rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      color: #9C27B0;
+
+      svg {
+        margin-left: 5px;
+        transition: transform .3s ease-out;
+        transform: rotate(-90deg)
+      }
+
+      &:hover {
+        svg {
+          transform: rotate(0deg)
+        }
+      }
+    }
+  }
+
+  .hero_graphic {
+    margin: 4rem auto 2rem;
+    @media(min-width: 768px) {
+      margin: 2rem auto 0;
+      width: 50%;
+    }
+
+    @media(min-width: 992px) {
+      padding: 0 100px 0 0;
+    }
+    
+    img {
+      width: 600px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import React from "react";
+
+var _ref2 = /*#__PURE__*/React.createElement("title", null, "Group");
+
+var _ref3 = /*#__PURE__*/React.createElement("desc", null, "Created with Sketch.");
+
+var _ref4 = /*#__PURE__*/React.createElement("g", {
+  id: "WiP",
+  stroke: "none",
+  strokeWidth: 1,
+  fill: "none",
+  fillRule: "evenodd"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Artboard",
+  transform: "translate(-90.000000, -38.000000)"
+}, /*#__PURE__*/React.createElement("g", {
+  id: "Group",
+  transform: "translate(90.000000, 38.000000)"
+}, /*#__PURE__*/React.createElement("polygon", {
+  id: "Rectangle",
+  fill: "#808282",
+  points: "3 14 25 26.5 47 14 40.855176 39 9.08421785 39"
+}), /*#__PURE__*/React.createElement("polygon", {
+  id: "Triangle",
+  fillOpacity: 0.262838724,
+  fill: "#101A1A",
+  points: "25 8 40 39 10 39"
+}), /*#__PURE__*/React.createElement("circle", {
+  id: "Oval",
+  fill: "#5E6363",
+  cx: 2,
+  cy: 9,
+  r: 2
+}), /*#__PURE__*/React.createElement("circle", {
+  id: "Oval",
+  fill: "#5E6363",
+  cx: 25,
+  cy: 2,
+  r: 2
+}), /*#__PURE__*/React.createElement("circle", {
+  id: "Oval",
+  fill: "#5E6363",
+  cx: 48,
+  cy: 9,
+  r: 2
+}))));
+
+var SvgCrown = function SvgCrown(_ref) {
+  var svgRef = _ref.svgRef,
+      title = _ref.title,
+      props = _objectWithoutProperties(_ref, ["svgRef", "title"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "50px",
+    height: "39px",
+    viewBox: "0 0 50 39",
+    ref: svgRef
+  }, props), title === undefined ? _ref2 : title ? /*#__PURE__*/React.createElement("title", null, title) : null, _ref3, _ref4);
+};
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(function (props, ref) {
+  return /*#__PURE__*/React.createElement(SvgCrown, _extends({
+    svgRef: ref
+  }, props));
+});
+export default __webpack_public_path__ + "static/media/crown.ed28accb.svg";
+export { ForwardRef as ReactComponent };

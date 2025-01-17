@@ -1,0 +1,142 @@
+.proj_1 {
+  position: relative;
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0 30px;
+
+  @media(min-width: 768px) {
+    display: flex;
+    
+  }
+
+  .dots_decor {
+    position: absolute;
+    left: 15%;
+    z-index: -1;
+    display: none;
+
+    @media(min-width: 992px) {
+      display: block;
+    }
+  }
+
+  .phone {
+    min-width: 50%;
+    svg {
+      max-width: 500px;
+      max-height: 530px;
+      width: 100%;
+      height: auto;
+
+      @media(min-width: 768px) {
+        max-width: 700px;
+      }
+    }
+  }
+  
+  .proj_cont {
+    max-width: 550px;
+    margin: 0 auto 0 0;
+    position: relative;
+    z-index: 10;
+
+    @media(min-width: 992px) {
+      width: 50%;
+      padding-left: 3rem;
+    }
+
+    a {
+      color: #9ae17b;
+    }
+
+    .proj_blurb {
+      margin: 0;
+      padding: 0 0 1.5rem 0;
+
+      @media(min-width: 992px) {
+        padding: 1.5rem 0;
+      }
+
+      @media(min-width: 992px) and (max-width: 1265px) {
+        margin: 0 100px 0 0;
+      }
+    }
+
+    .space {
+      padding: 0 15px;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 300;
+      opacity: .7;
+      margin-bottom: 0;
+      font-size: 15px;
+
+      @media(min-width: 992px) {
+        font-size: 18px;
+      }
+    }
+
+    h1 {
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 39px;
+
+      @media(min-width: 1140px) {
+        font-size: 60px;
+      }
+
+      span {
+        display: inline-block;
+        transition: all .3s ease-out;
+
+        &.space {
+          padding-right: 15px;
+        }
+
+        &:hover {
+          color: #F4A949;
+          animation: rubberBand;
+          animation-duration: 1s;
+        }
+      }
+    }
+
+    a.arrow_link {
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-left: 5px;
+        transition: transform .3s ease-out;
+        transform: rotate(-90deg);
+      }
+
+      &:hover {
+        svg {
+          transform: rotate(-90deg) translateY(10px);
+        }
+      }
+    }
+    .view_proj {
+      display: flex;
+      a {
+        margin-right: 3rem;
+      }
+      .fit_logo {
+        svg {
+          .cls-2 {
+            fill: #9ae17b;
+          }
+          path {
+            fill: aliceblue;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.about_section {
+  align-items: center;
+  padding: 100px 0;
+  @media(min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 0;
+  }
+
+  @media(min-width: 992px) {
+    padding: 0;
+  }
+
+  .dark_cube2 {
+    position: absolute;
+    opacity: .7;
+    max-width: 100px;
+    bottom: -200px;
+    left: 10%;
+    z-index: -1;
+    display: block;
+    @media(min-width: 768px) {
+      display: block;
+      max-width: 200px;
+    }
+  }
+
+  .purple_romb2 {
+    position: absolute;
+    opacity: .7;
+    max-width: 100px;
+    top: 0;
+    right: -200px;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+    display: block;
+    @media(min-width: 768px) {
+      display: block;
+      max-width: 150px;
+    }
+
+    @media(min-width: 992px) {
+      top: -170px;
+    }
+  }
+
+  .t {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin: auto;
+    opacity: .1;
+    filter: drop-shadow(10px 10px 5px #000000);
+
+    @media(min-width: 768px) {
+      margin: auto auto auto 30%;
+    }
+  }
+
+  .about_me {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    
+    @media(min-width: 768px) {
+      width: 50%;
+      max-width: 100%;
+    }
+
+    .font-60 {
+      margin: 0;
+      font-size: 39px;
+
+      @media(min-width: 1140px) {
+        font-size: 60px;
+      }
+
+      span {
+        display: inline-block;
+        transition: all .3s ease-out;
+          
+          &:hover {
+            color: #F4A949;
+            animation: rubberBand;
+            animation-duration: 1s;
+          }
+
+        &.space {
+          padding-right: 15px;
+        }
+      }
+    }
+    p {
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: aliceblue;
+      opacity: .7;
+      font-size: 16px;
+      line-height: 24px;
+      
+      @media(min-width: 768px) {
+        padding-right: 2rem;
+      }
+
+      @media(min-width: 992px) {
+        font-size: 20px;
+      }
+    }
+  }
+  .about_info {
+    @media(min-width: 768px) {
+      width: 50%;
+    }
+    @media(min-width: 992px) {
+      margin-right: 100px;
+    }
+  }
+}
+
+.rubberBand {
+  animation: rubberBand;
+  animation-duration: 1s;
+}

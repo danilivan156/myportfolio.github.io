@@ -1,0 +1,141 @@
+.fullpage {
+  background-color: #141416;
+  color: aliceblue;
+  position: relative;
+  overflow: hidden;
+  @media(min-width: 992px) {
+    overflow: visible;
+  }
+
+ .fp-section {
+   @media(max-width: 992px) {
+    height: auto!important;
+
+    .fp-slide {
+      min-height: 100vh;
+    }
+   }
+  .fp-tableCell {
+    @media(max-width: 992px) {
+      height: auto!important;
+      padding: 50px 0;
+    }
+  }
+ }
+
+  .hero_decor {
+    position: absolute;
+    left: -650px;
+    bottom: -450px;
+    opacity: .4;
+    transform: rotate(180deg);
+    filter: blur(6px);
+    @media(min-width: 768px) {
+      left: -550px;
+      opacity: .7;
+    }
+  }
+
+  .about_decor {
+    position: absolute;
+    right: -650px;
+    bottom: -450px;
+    opacity: .4;
+    filter: blur(6px);
+    @media(min-width: 768px) {
+      opacity: .7;
+      right: -550px;
+    }
+  }
+
+  .skills_decor {
+    position: absolute;
+    left: -650px;
+    bottom: -450px;
+    opacity: .4;
+    transform: rotate(180deg);
+    filter: blur(6px);
+    @media(min-width: 768px) {
+      left: -550px;
+      opacity: .7;
+    }
+  }
+
+  .contact_decor {
+    position: absolute;
+    right: -650px;
+    top: -400px;
+    opacity: .4;
+    filter: blur(6px);
+    @media(min-width: 768px) {
+      opacity: .7;
+      right: -550px;
+    }
+  }
+
+  .contact_decor_bottom {
+    position: absolute;
+    left: -650px;
+    bottom: -450px;
+    opacity: .4;
+    transform: rotate(180deg);
+    filter: blur(6px);
+    @media(min-width: 768px) {
+      left: -550px;
+      opacity: .7;
+    }
+  }
+
+  .innerin {
+    width: 1440px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 101;
+  }
+}
+
+.fp-slidesNav.fp-bottom {
+  @media(min-width: 992px) {
+    bottom: 50px!important;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      a {
+        &.active {
+          span {
+            width: 14px;
+            height: 14px;
+          }
+        }
+        span {
+          background-color: #444;
+          width: 6px;
+          height: 6px;
+          
+        }
+      }
+    }
+  }
+}
+
+// FLOATING ANIMATION USE LIKE THIS 
+// animation: float 4s ease-in-out infinite;
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
