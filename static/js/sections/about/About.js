@@ -43,7 +43,7 @@ const About = (fullpageState) => {
       <div>Fan of Boxing, outdoor activities, video games, and coding of course.</div>
       <p>Interested in the entire frontend spectrum and working on ambitious projects with interesting people.</p>
       </div>
-      <img className="t" width="400" src="/T.png" alt="Todor Dimov" />
+      <img className="t" width="400" src="../../T.png" alt="Данил Исаев" />
     </div>
   )
 }
