@@ -12006,14 +12006,14 @@
                 color: "#F4A949",
                 coordinates: [43.665208, -79.392710],
                 value: 50,
-                name: "Todor"
+                name: "Danil"
             }, {
                 id: 2,
                 city: "Родился в России г.Кирове",
                 color: "#9C27B0",
                 coordinates: [58.603595, 49.668023],
                 value: 50,
-                name: "Todor"
+                name: "Danil"
             }],
             O = function() {
                 var e = {
